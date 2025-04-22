@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clouDrive Upload</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link
@@ -16,6 +17,18 @@
             onclick="showPopUp()"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             upload file
+        </button>
+
+        <button
+            onclick="window.location.href='/'" 
+            class="nav-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Back
+        </button>
+
+        <button
+            onclick="window.location.href='/user/logout'" 
+            class="nav-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+            Log out
         </button>
 
         <div class="pop hidden backdrop-blur fixed top-0 left-0 h-screen w-screen flex items-center justify-center">
@@ -39,6 +52,9 @@
             </div> 
             <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                 Upload file
+            </button>
+            <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                Back
             </button>
             
         </form>

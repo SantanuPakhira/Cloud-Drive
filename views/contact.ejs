@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 dark:bg-gray-800">
+
+  <!-- Contact Us Page Layout -->
+  <div class="p-4 bg-gray-100 dark:bg-gray-800 h-screen w-screen flex items-center justify-center">
+    <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg w-[70%]">
+      <h1 class="text-3xl font-semibold text-gray-900 dark:text-white">Contact Us</h1>
+      <form action="#" method="POST" class="mt-4">
+        <div>
+          <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
+          <input type="text" id="name" name="name" class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white block w-full p-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-600" required />
+        </div>
+
+        <div class="mt-4">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+          <input type="email" id="email" name="email" class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white block w-full p-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-600" required />
+        </div>
+
+        <div class="mt-4">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message</label>
+          <textarea id="message" name="message" class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white block w-full p-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="4" required></textarea>
+        </div>
+
+        <div class="mt-6">
+          <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
