@@ -1,96 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>clouDrive Dashboard</title>
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-</head>
-<body class="bg-gray-100 dark:bg-gray-900 text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>clouDrive Dashboard</title>
+    <link rel="shortcut icon" href="\logo.JPG">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-white">
 
-<!-- Navbar -->
-<nav class="bg-gray-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
-      <div class="flex items-center">
-        <img class="h-8 w-auto" src="" alt="needLogo">
-        <span class="ml-3 font-semibold text-lg text-white">clouDrive</span>
-      </div>
-      <div class="hidden sm:flex space-x-4">
-        <a href="/home" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-900">Dashboard</a>
-        <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">About Me</a>
-        <a href="/contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Contact</a>
-        <a href="/user/register" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">SignUp</a>
-        <a href="/user/login" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Login</a>
-        <a href="/user/logout" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Logout</a>
-      </div>
-      <div class="relative">
-        <button id="userMenuButton" class="flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-white">
-          <img class="h-8 w-8 rounded-full" src="" alt="needLogo">
-        </button>
-        <div id="userMenu" class="hidden absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg z-50 py-1">
-          <a href="/home" class="block px-4 py-2 text-sm hover:bg-gray-100">Your Profile</a>
-          <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Settings</a>
-          <a href="/user/logout" class="block px-4 py-2 text-sm hover:bg-gray-100">Sign out</a>
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex items-center">
+            <img class="h-8 w-auto h-8 w-8 rounded-full" src="\logo.JPG" alt="needLogo">
+            <span class="ml-3 font-semibold text-lg text-white">clouDrive</span>
+          </div>
+          <div class="hidden sm:flex space-x-4">
+            <a href="/home" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-900">Dashboard</a>
+            <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">About Me</a>
+            <a href="/contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Contact</a>
+            <a href="/user/register" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">SignUp</a>
+            <a href="/user/login" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Login</a>
+            <a href="/user/logout" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Logout</a>
+          </div>
+          <div class="relative">
+            <button id="userMenuButton" class="flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-white">
+              <img class="h-8 w-8 rounded-full" src="/logo.JPG" alt="needLogo">
+            </button>
+            <div id="userMenu" class="hidden absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg z-50 py-1">
+              <a href="/home" class="block px-4 py-2 text-sm hover:bg-gray-100">Your Profile</a>
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Settings</a>
+              <a href="/user/logout" class="block px-4 py-2 text-sm hover:bg-gray-100">Sign out</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section class="py-8 px-4 text-center">
-  <h1 class="text-3xl font-bold text-white mb-2">Welcome to clouDrive Dashboard</h1>
-  <p class="text-gray-300 max-w-xl mx-auto">Santanu Pakhira’s cloudDrive. We aim to provide secure and efficient cloud storage solutions for everyone.</p>
-</section>
+    <!-- Hero Section -->
+    <section class="py-8 px-4 text-center">
+      <h1 class="text-3xl font-bold text-white mb-2">Welcome to clouDrive Dashboard</h1>
+      <p class="text-gray-300 max-w-xl mx-auto">Santanu Pakhira’s cloudDrive. We aim to provide secure and efficient cloud storage solutions for everyone.</p>
+    </section>
 
-<!-- Dashboard Section -->
-<section class="px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-  <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
-    <h3 class="font-semibold text-lg">Storage Overview</h3>
-    <p>Used: 3.2 GB / 15 GB</p>
-  </div>
-  <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
-    <h3 class="font-semibold text-lg">Recent Files</h3>
-    <p>View and manage your latest uploads</p>
-  </div>
-  <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
-    <h3 class="font-semibold text-lg">Upload</h3>
-    <p>Drop your files here or click to upload</p>
-  </div>
-  <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
-    <h3 class="font-semibold text-lg">Account Settings</h3>
-    <p>Manage your preferences and profile</p>
-  </div>
-</section>
+    <!-- Dashboard Section -->
+    <section class="px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
+        <h3 class="font-semibold text-lg">Storage Overview</h3>
+        <p>Used: 3.2 GB / 15 GB</p>
+      </div>
+      <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
+        <h3 class="font-semibold text-lg">Recent Files</h3>
+        <p>View and manage your latest uploads</p>
+      </div>
+      <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
+        <h3 class="font-semibold text-lg">Upload</h3>
+        <p>Drop your files here or click to upload</p>
+      </div>
+      <div class="bg-white text-black rounded-lg shadow p-4 hover:shadow-md">
+        <h3 class="font-semibold text-lg">Account Settings</h3>
+        <p>Manage your preferences and profile</p>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="w-full bg-gray-800 text-white mt-10 py-4">
-  <div class="text-center text-sm">
-    <p>&copy; 2025 Santanu Pakhira. All rights reserved.</p>
-    <p>
-      <a href="/about" class="text-blue-400 hover:underline">About Us</a> |
-      <a href="/contact" class="text-blue-400 hover:underline">Contact</a>
-    </p>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="w-full bg-gray-800 text-white mt-10 py-4">
+      <div class="text-center text-sm">
+        <p>&copy; 2025 Santanu Pakhira. All rights reserved.</p>
+        <p>
+          <a href="/about" class="text-blue-400 hover:underline">About Us</a> |
+          <a href="/contact" class="text-blue-400 hover:underline">Contact</a>
+        </p>
+      </div>
+    </footer>
 
-<!-- JS for dropdown -->
-<script>
-  const userMenuButton = document.getElementById('userMenuButton');
-  const userMenu = document.getElementById('userMenu');
+    <!-- JS for dropdown -->
+    <script>
+      const userMenuButton = document.getElementById('userMenuButton');
+      const userMenu = document.getElementById('userMenu');
 
-  userMenuButton.addEventListener('click', () => {
-    userMenu.classList.toggle('hidden');
-  });
+      userMenuButton.addEventListener('click', () => {
+        userMenu.classList.toggle('hidden');
+      });
 
-  document.addEventListener('click', (e) => {
-    if (!userMenu.contains(e.target) && !userMenuButton.contains(e.target)) {
-      userMenu.classList.add('hidden');
-    }
-  });
-</script>
+      document.addEventListener('click', (e) => {
+        if (!userMenu.contains(e.target) && !userMenuButton.contains(e.target)) {
+          userMenu.classList.add('hidden');
+        }
+      });
+    </script>
 
-</body>
+  </body>
 </html>
